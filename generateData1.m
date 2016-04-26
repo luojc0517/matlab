@@ -1,0 +1,23 @@
+%生成n个样本
+n=100;
+X=cell(1,n);
+Y=cell(1,n);
+mu=cell(1,n);
+D=cell(1,n);
+L=cell(1,n);
+sigma=cell(1,n);
+m=cell(1,n);
+delta=cell(1,n);
+t=cell(1,n);
+H=cell(1,n);
+for i=1:n
+    [Xi,Yi,mui,deltai,sigmai,mi,ti,Hi]=generateData();
+    X{i}=Xi;
+    Y{i}=Yi;
+    mu{i}=mui;
+    delta{i}=deltai;
+    sigma{i}=sigmai;
+    m{i}=mi;
+    t{i}=ti;
+    H{i}=Hi;
+end
